@@ -20,8 +20,11 @@ package main
 import (
 	"fmt"
 	"runtime"
+	"time"
 )
 
 func main() {
 	fmt.Println("Esse é programa do exercício de compilação cruzada. Foi compilado num linux/amd64, e agora está rodando num sistema:", runtime.GOARCH, runtime.GOOS)
+
+	time.Sleep(2000)
 }

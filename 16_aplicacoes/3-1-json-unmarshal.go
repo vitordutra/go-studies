@@ -28,7 +28,7 @@ type Pessoa struct {
 func main() {
 
 	sb := []byte(`{"Nome":"James","Sobrenome":"Bond","Idade":40,"Profissao":"Agente Secreto","ContaBancaria":1000000.5}`)
-
+	
 	var jamesBond Pessoa
 
 	err := json.Unmarshal(sb, &jamesBond)
